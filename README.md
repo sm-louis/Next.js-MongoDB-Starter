@@ -1,5 +1,18 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Implemented Feature
+Login Feature
+
+Change User Role
+
+Admin Dashboard to manage users
+
+Several Pages
+
+Database: MongoDB
+
+
+
 ## Getting Started
 
 First, run the development server:
