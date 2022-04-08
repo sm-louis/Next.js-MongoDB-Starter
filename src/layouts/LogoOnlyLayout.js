@@ -1,0 +1,37 @@
+import PropTypes from 'prop-types';
+// @mui
+import { styled } from '@mui/material/styles';
+// components
+import Logo from '../components/Logo';
+import Image from '../components/Image'
+
+// ----------------------------------------------------------------------
+
+const HeaderStyle = styled('header')(({ theme }) => ({
+  top: 0,
+  left: 0,
+  lineHeight: 0,
+  width: '100%',
+  position: 'absolute',
+  padding: theme.spacing(3, 3, 0),
+  [theme.breakpoints.up('sm')]: {
+    padding: theme.spacing(5, 5, 0),
+  },
+}));
+
+// ----------------------------------------------------------------------
+
+LogoOnlyLayout.propTypes = {
+  children: PropTypes.node,
+};
+
+export default function LogoOnlyLayout({ children }) {
+  return (
+    <>
+      <HeaderStyle>
+        <Image src="/logo/valyou_x_black_logo.svg" alt="logo" sx={{ width:'135px' }} />
+      </HeaderStyle>
+      {children}
+    </>
+  );
+}
